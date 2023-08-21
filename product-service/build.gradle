@@ -29,6 +29,11 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/org.testcontainers/postgresql
+    testImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.3'
+    // https://mvnrepository.com/artifact/org.testcontainers/testcontainers
+    testImplementation group: 'org.testcontainers', name: 'testcontainers', version: '1.18.3'
+    testImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.3'
 }
 
 tasks.named('test') {
